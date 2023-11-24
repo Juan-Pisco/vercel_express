@@ -2,7 +2,7 @@
 // install `npm install express` to use express
 // install `npm install nodemon` to use nodemon (EXTRA)
 
-// require('dotenv').config(); // Add this line at the top of your file
+require('dotenv').config(); // Add this line at the top of your file
 
 const express = require('express');
 const swaggerUi = require('swagger-ui-express');
@@ -68,7 +68,7 @@ app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocs));
  */
 app.get('/', (req, res) => {
     // this is where the cool logic goes
-    return res.send("<h1>Hello World</h1>")
+    return res.send("<h1>Hello Worlddddd</h1>")
 })
 
 
